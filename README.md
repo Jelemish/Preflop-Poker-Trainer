@@ -3,7 +3,7 @@
 
 Preflop poker trainer for NLH, 6max, 5% rake
 
-Charts are taken from https://greenlinepoker.com/greencharts/
+Embedded ranges are tighest ranges from https://greenlinepoker.com/greencharts/
 
 Implemented as python console program
 
