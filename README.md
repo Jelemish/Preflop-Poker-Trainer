@@ -1,4 +1,6 @@
 # Preflop-Poker-Trainer
+![cover](cover.jpg)
+
 Preflop poker trainer for NLH, 6max, 5% rake
 
 Charts are taken from https://greenlinepoker.com/greencharts/
