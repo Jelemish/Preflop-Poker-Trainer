@@ -46,7 +46,7 @@ def poker_opening_trainer():
             [('[' + p.upper() + ']' if p == position else p) for p in positions] + ['bb']
         )
         if total_questions:
-            print(f"Precicion: {correct_answers / total_questions:.2%} ({correct_answers}/{total_questions})\n")
+            print(f"Precision: {correct_answers / total_questions:.2%} ({correct_answers}/{total_questions})\n")
         print(f"Position: ({pos}), Hand: {hand}. r/f?")
         user_input = input("Your answer: ").strip().lower()
 
@@ -66,7 +66,7 @@ def poker_opening_trainer():
         else:
             print(RED + f"Incorrect. Answer is: {'r' if hand in correct_range else 'f'}" + END)
 
-    print(f"Total precicion: {correct_answers / total_questions:.2%} ({correct_answers}/{total_questions})")
+    print(f"Total precision: {correct_answers / total_questions:.2%} ({correct_answers}/{total_questions})")
 
 if __name__ == "__main__":
     poker_opening_trainer()
