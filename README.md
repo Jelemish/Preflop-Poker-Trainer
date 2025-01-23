@@ -1,5 +1,5 @@
 # Preflop-Poker-Trainer
-Preflop poker trainer for 6max table, 5% rake
+Preflop poker trainer for NLH, 6max, 5% rake
 
 Charts are taken from https://greenlinepoker.com/greencharts/
 
