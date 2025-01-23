@@ -11,10 +11,10 @@ Implemented as python console program
 1) Open raise
 
 ## TODO trainers
-1) Defence after raise
+1) Defense after raise
 2) Isolate (raise after limp)
-3) Defence after 3-bet
-4) Defence after 4-bet
+3) Defense after 3-bet
+4) Defense after 4-bet
 
 ## Future plans
 1) consume ranges from file (which format should I use??)
