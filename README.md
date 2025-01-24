@@ -5,7 +5,7 @@ Preflop poker trainer for NLH, 6max, 5% rake
 
 Embedded ranges are tighest ranges from https://greenlinepoker.com/greencharts/
 
-Provided solver-approved tigth ranges allow beginners to avoid difficult post-flop decisions in NL2-10 games
+Provided solver-approved +EV tigth ranges allow beginners to avoid difficult post-flop decisions in NL2-10 games
 
 Implemented as python console program
 
