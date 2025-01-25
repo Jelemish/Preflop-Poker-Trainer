@@ -11,14 +11,13 @@ Implemented as python console program
 
 ## Implemented trainers
 1) Open raise
+2) Raise defense
 
 ## TODO trainers
-1) Raise defense
-2) Isolate (raise after limp)
-3) 3-bet defense
-4) 4-bet defense
+1) Isolate (raise after limp)
+2) 3-bet defense
+3) 4-bet defense
 
 ## Future plans
 1) consume ranges from file (which format should I use??)
 2) write trainers in HTML + JS and deploy it for public use
-
