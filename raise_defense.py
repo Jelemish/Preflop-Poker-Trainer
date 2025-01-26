@@ -209,7 +209,7 @@ def poker_opening_trainer():
             call_range = []
 
         if user_input == "r":
-            if hand in raise_range:
+            if hand in raise_range or hand in caution_range:
                 if hand in caution_range:
                     print(YELLOW + "Correct! But raise with caution!" + END)
                 elif hand in call_range:
