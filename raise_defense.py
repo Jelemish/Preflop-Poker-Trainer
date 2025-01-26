@@ -85,10 +85,9 @@ bb_vs_bu_call = [
     "87s", "76s", "65s", "54s"
 ]
 
-bb_vs_sb_3bet = [
-    "AA", "KK", "QQ", "JJ", "TT", "88", "77",
+bb_vs_sb_3bet = [ "AA", "KK", "QQ", "JJ", "TT", "88", "77",
     "AKs", "AQs", "AJs", "ATs", "A9s", "A5s", "A4s", "A3s", 
-    "AKo", "AQo", "AJo", "A5o", "A4o", "A3o", "A2o",
+    "AKo", "AQo", "AJo", "A5o", "A4o", "A3o", "A2o"] + \
     ["KQo", "KJo", "K8o", "K7o", "K6o", "K5o"] + \
     ["Q9o", "Q8o"] + \
     ["J9o", "J8o", "T9o", "T8o"] + \
@@ -101,7 +100,6 @@ bb_vs_sb_3bet = [
     ["76s", "75s"] + \
     ["65s", "54s"] + \
     ["54s"]
-]
 
 bb_vs_sb_call = ["99", "88", "77", "66", "55", "44", "33", "22"] + \
     ["AJo", "ATo"] + [f"A{i}o" for i in range(2, 10)] + \
@@ -183,7 +181,7 @@ def poker_opening_trainer():
         pos = ' '.join(render_pos(i) for i in positions)
         if total_questions:
             print(f"Precicion: {correct_answers / total_questions:.2%} ({correct_answers}/{total_questions})\n")
-        print(f"Position: ({pos}), Hand: {hand}. r/c/f?")
+        print(f"Position: [{pos}], Hand: {hand}. r/c/f?")
 
         user_input = input("Your answer: ").strip().lower()
         while user_input not in ['r', 'c', 'f', 'q']:
