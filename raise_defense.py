@@ -1,3 +1,4 @@
+import argparse
 import random
 
 # UTG - BU
@@ -147,6 +148,12 @@ def generate_hand():
 
 
 def poker_opening_trainer():
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-b', '--blinds', action='store_true')
+    parser.add_argument('-nb', '--non-blinds', action='store_true')
+    args = parser.parse_args()
+
     correct_answers = 0
     total_questions = 0
 
@@ -154,7 +161,13 @@ def poker_opening_trainer():
     print("Submit 'r' for raise, 'c' for call or 'f' for fold. Submit 'q' for quit.\n")
 
     while True:
-        position = random.choice(positions[1:])
+        if args.blinds:
+            position = random.choice(positions[-2:])
+        elif args.non_blinds:
+            position = random.choice(positions[1:-2])
+        else:
+            position = random.choice(positions[1:])
+        
         opponent_position = random.choice(positions[:positions.index(position)])
 
 
