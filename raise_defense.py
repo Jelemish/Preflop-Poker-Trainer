@@ -220,7 +220,10 @@ def poker_opening_trainer():
             else:
                 print(RED + f"Incorrect. Answer is: {'c' if hand in call_range else 'f'}" + END)
         elif user_input == "f":
-            if hand in raise_range and hand in call_range:
+            if hand in caution_range:
+                print(YELLOW + "Correct! But raise also an option!" + END)
+                correct_answers += 1
+            elif hand in raise_range and hand in call_range:
                 print(RED + f"Incorrect. Answer is: r | c" + END)
             elif hand in raise_range:
                 print(RED + f"Incorrect. Answer is: r" + END)
